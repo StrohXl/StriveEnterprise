@@ -1,0 +1,109 @@
+.hero {
+  overflow: hidden;
+  position: relative;
+  padding: 5em 0 !important;
+  @media (width >= 600px) {
+    padding: 5em 0 !important;
+  }
+  @media (width >= 800px) {
+    padding: 10em 0 6em !important;
+  }
+  @media (width >= 1200px) {
+    padding: 12em 0 8em !important;
+  }
+}
+.hero-body {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+.hero-body h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.hero-body hr {
+  border-top: 4px solid #ffa100;
+  width: 200px;
+  margin-inline: 0;
+  margin-left: 20px;
+  margin-bottom: 0.5em;
+}
+.hero-body p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.hero-body button {
+  margin-left: 20px;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 0.5em;
+  font-weight: 600;
+  border: 1px solid #fff;
+}
+.hero-form {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+}
+.hero-form h2 {
+  background: #003a70;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 4px solid #ffa100;
+  margin-bottom: 0;
+}
+.hero-form form {
+  background: #fff;
+}
+.hero-form form input {
+  border-radius: 20px;
+  background-color: #eee;
+  padding-left: 20px;
+}
+.hero-form form textarea {
+  background-color: #eee;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.hero-form form div {
+  display: flex;
+  gap: 0.5em;
+}
+.hero-form form button {
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 0;
+}
+.hero-video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -240%;
+  & video {
+    width: 480%;
+  }
+  @media (width>=768px) {
+    left: 0%;
+    video {
+      width: 160%;
+    }
+  }
+  @media (width>=1200px) {
+    video {
+      width: 120%;
+    }
+  }
+  @media (width>=1300px) {
+    video {
+      width: 110%;
+    }
+  }
+  @media (width>=1400px) {
+    video {
+      width: 100%;
+    }
+  }
+}

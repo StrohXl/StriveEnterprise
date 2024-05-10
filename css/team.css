@@ -1,0 +1,86 @@
+.team {
+  background: #eee;
+  & h2 {
+    color: #003a70;
+  }
+
+  & h2:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 0.5em;
+  }
+  & h2:nth-child(3) {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0.2em;
+  }
+  & hr {
+    margin: 0.3em 0;
+    width: 290px;
+    border-bottom: 3px solid #ffa100;
+  }
+  & button {
+    color: #fff;
+    border-radius: 20px;
+  }
+   .card-carousel-item {
+    margin: auto;
+    width: 250px;
+    display: grid;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 2em 0 1em;
+    justify-content: center;
+    position: relative;
+    & .content-image-background-team {
+      background-color: #003a70;
+      position: absolute;
+      width: 200%;
+      left: -50%;
+      top: -215px;
+    }
+    & .image-background-team {
+      width: 100%;
+      opacity: 0.5;
+    }
+    & h5 {
+      text-align: center;
+    }
+    & h5:nth-child(1) {
+      color: #003a70;
+      margin-bottom: 1px;
+    }
+    & h5:nth-child(2) {
+      margin-top: 0;
+      color: #ffa100;
+    }
+
+    & .content-image-team {
+      margin: auto;
+      width: 150px;
+      aspect-ratio: 1;
+      border-radius: 100%;
+      overflow: hidden;
+      position: relative;
+      border: 10px solid #fff;
+    }
+    & .image-team {
+      width: 130%;
+      position: absolute;
+      left: -15%;
+    }
+    & button {
+      color: #ffa100;
+    }
+  }
+  & .content-cards-team {
+    display: none;
+  }
+  @media (width>768px) {
+    .carousel {
+      display: none;
+    }
+    .content-cards-team {
+      display: flex;
+    }
+  }
+}

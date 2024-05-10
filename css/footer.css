@@ -1,0 +1,58 @@
+footer {
+  background: #003a70;
+  color: #fff;
+
+  & h5 {
+    color: #ffa100;
+  }
+  & a {
+    transition: .2s;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  & hr {
+    border-bottom: 0.5px solid #ddd;
+  }
+  & ul {
+    display: grid;
+    gap: 0.5em;
+
+    & .content-networks {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-top: 0.5em;
+      font-size: 20px;
+    }
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+  }
+  & .input-send{
+    display: flex;
+    background: #fff;
+    padding: 3px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    & input {
+      border: none;
+      padding-inline: 10px;
+      outline: none;
+      
+    }
+    & button{
+      border-radius: 20px;
+      color: #fff;
+      display: flex;
+    align-items: center;
+    }
+  }
+}

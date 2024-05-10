@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>University</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/popular.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/benefits.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/careers.css" />
+    <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/reviews.css " />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar">
+        <div class="nav-secondary ">
+          <div class="container-fluid container-xl px-3 px-xxl-0">
+            <div class="content-contact">
+              <a target="_blank"  href="https://api.whatsapp.com/send?phone=+58123456789&text=Hola">
+                <i class="bi bi-telephone-fill"></i>123 456 789</a
+              >
+              <a href="mailto:info@email.com?subject=Frontend&body=Hola">
+                <i class="bi bi-envelope-fill"></i>info@email.com</a
+              >
+            </div>
+            <div class="content-networks">
+              <a target="_blank" href="https://youtube.com">
+                <i class="bi-youtube"></i>
+              </a>
+         
+              <a target="_blank" href="https://instagram.com">
+                <i class="bi-instagram"></i>
+              </a>
+              <a target="_blank" href="https://facebook.com">
+                <i class="bi-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-primary ">
+        <div class="container-xl px-3 px-xxl-0">
+            <img  src="./public/images/LOGO.png" alt="" />
+            <nav>
+              <ul class="mb-0">
+                <li><a href="/#about" onclick="moveScrollToSection(event,1)">About Us</a></li>
+                <li><a href="/#courses" onclick="moveScrollToSection(event,2)">Courses</a></li>
+                <li><a href="/#team" onclick="moveScrollToSection(event,3)" >Team</a></li>
+                <li><a href="/#contact"onclick="moveScrollToSection(event,4)">Contact Us</a></li>
+              </ul>
+            </nav>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero py-5">
+      <div class="hero-body container-xl row mx-auto px-sm-3 px-xl-0 justify-content-center justify-content-md-between row-cols-1 row-cols-md-2">
+        <div >
+          <h1 class="text-center text-md-left h2">Welcome a the University</h1>
+          <hr class="mx-auto mx-md-0" />
+          <p class="text-center text-md-left h1">
+            We are an online <br />
+            platform to make learning
+          </p>
+          <div class="row mx-0 px-0 justify-content-center justify-content-md-start mb-4">
+            <button class="btn btn-warning px-5">Get Now</button>
+          </div>
+        </div>
+        <div class="hero-form">
+          <h2>Register Now !</h2>
+          <form class="py-5 px-2 px-md-3 px-xl-4">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Name"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Email"
+                aria-describedby="emailHelp"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Phone"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                placeholder="Message"
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning px-5">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-video">
+        <video src="./public/videos/hero-video.mp4" autoplay loop></video>
+      </div>
+    </section>
+    <section class="popular container-xl">
+      <h2 class="px-3 px-xl-0">The most popular</h2>
+      <hr class="mx-3 mx-xl-0" />
+      <h2 class="px-3 px-xl-0">know what we offer you</h2>
+      <div
+        class="popular-content-cards row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+      >
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 16rem">
+            <div class="card-media">
+              <img
+                src="./public/images/IMAGE CURSO 1.jpg"
+                alt="curso 1"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Design for the web with
+                <br />
+                adobe photoshop
+              </h5>
+              <a href="#" class="btn btn-warning px-3 px-md-4 h6">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 16rem">
+            <div class="card-media">
+              <img
+                src="./public/images/IMAGE CURSO 2.jpg"
+                alt="curso 1"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Design for the web with
+                <br />
+                adobe photoshop
+              </h5>
+              <a href="#" class="btn btn-warning px-3 px-md-4 h6">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 16rem">
+            <div class="card-media">
+              <img
+                src="./public/images/IMAGE CURSO 3.jpg"
+                alt="curso 1"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Design for the web with
+                <br />
+                adobe photoshop
+              </h5>
+              <a href="#" class="btn btn-warning px-3 px-md-4 h6">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 16rem">
+            <div class="card-media">
+              <img
+                src="./public/images/IMAGE CURSO 4.jpg"
+                alt="curso 1"
+                style="width: 100%"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Design for the web with
+                <br />
+                adobe photoshop
+              </h5>
+              <a href="#" class="btn btn-warning px-3 px-md-4 h6">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center" class="mt-5">
+        <button class="btn btn-outline-warning px-5 mt-4">View More</button>
+      </div>
+    </section>
+    <section class="about py-5">
+     <div class="container-xl">
+       <h2 class="text-center text-md-left h3">About Us</h2>
+       <hr class="mx-auto mx-md-0" />
+       <h2 class="h2 text-center text-md-left">know everything we do for you</h2>
+       <div class="about-body mt-5 row row-cols-1 row-cols-md-2 mx-0">
+         <div class="col px-0">
+           <p  class="ml-0 text-center text-md-left">
+             The university is a Physical, place, buildings, laboratories,
+             libraries ... where students and teachers meet. The university is
+             also a human-social system, that is, a set of elements that are
+             related and interact with each other
+           </p>
+           <button class="btn btn-warning px-4 mt-5">Read More</button>
+         </div>
+         <div class="col px-0">
+           <div class="content-image">
+             <img
+               src="./public/images/IMAGE ABOUT US.jpg"
+               style="width: 100%; max-width: 500px"
+               alt="about"
+             />
+             <div></div>
+           </div>
+         </div>
+        <div class="row px-0 mx-0 content-button justify-content-center justify-content-md-start">
+          <button class="btn btn-warning px-4 mt-5">Read More</button>
+        </div>
+
+       </div>
+     </div>
+    </section>
+    <section class="benefits">
+    <div class="row row-cols-2 row-cols-md-4 justify-content-center mx-auto container-xl">
+        <div class="card" style="width: 9rem; max-width: 9rem;">
+          <div class="card-media">
+            <img
+              src="./public/images/ICONO 1.png"
+              class="card-img-top"
+              alt="icono 1"
+            />
+          </div>
+      
+          <div class="card-body">
+            <h5 class="card-title">Excellent <br />Content</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; max-width: 9rem;">
+          <div class="card-media">
+            <img
+              src="./public/images/ICONO 2.png"
+              class="card-img-top"
+              alt="icono 1"
+            />
+          </div>
+      
+          <div class="card-body">
+            <h5 class="card-title">Experts <br />Instrutors</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; max-width: 9rem;">
+          <div class="card-media">
+            <img
+              src="./public/images/ICONO 3.png"
+              class="card-img-top"
+              alt="icono 1"
+            />
+          </div>
+      
+          <div class="card-body">
+            <h5 class="card-title">The Best <br />Professionals</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; max-width: 9rem;">
+          <div class="card-media">
+            <img
+              src="./public/images/ICONO 4.png"
+              class="card-img-top"
+              alt="icono 1"
+            />
+          </div>
+      
+          <div class="card-body">
+            <h5 class="card-title">Countless <br />Courses</h5>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="careers py-5">
+      <div class="container-xl ">
+        <h2 class="text-center text-md-left h3">Study careers</h2>
+        <hr  class="mx-auto mx-md-0"/>
+        <h2 class="text-center text-md-left h2">Explore the different careers we offer</h2>
+        <div class="row content-cards mx-0 px-0 mt-5 justify-content-between">
+
+        
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+               <div class="card">
+                 <img src="./public/images/IMAGE  CATEGORY ADMINISTRATION.jpg" style="width: 100%;" alt="">
+                 <div class="card-body">
+                   <h2 class="h3">Administration</h2>
+                   <a class="btn btn-warning px-5" href="#">Explore</a>
+                 </div>
+               </div>
+            </div>  
+
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+                <div class=" card"><img src="./public/images/IMAGE  CATEGORY ACCOUNTING.jpg" style="width: 100%;" alt="">
+                  <div class="card-body">
+                    <h2 class="h3">Accounting</h2>
+                    <a class="btn btn-warning px-5" href="#">Explore</a>
+                  </div></div>
+            </div>  
+        
+            <div class="col-lg-5 row row-cols-1 row-cols-sm-2 row-cols-lg-1  mx-0 px-0 ">
+              <div class="col-12 col-sm-6 col-lg-12 p-2">
+                <div class="card card-aspect">
+                  <img src="./public/images/IMAGE  CATEGORY MATHEMATICS.jpg" style="width: 100%;" alt="">
+                  <div class="card-body">
+                    <h2 class="h3">Mathematics</h2>
+                    <a class="btn btn-warning px-5" href="#">Explore</a>
+                  </div>
+                 </div>
+             </div>  
+               
+             <div class="col-12 col-sm-6 col-lg-12 p-2">
+                <div class="card card-aspect">
+                  <img src="./public/images/IMAGE  CATEGORY PROGRAMMING.jpg" style="width: 100%;" alt="">
+                  <div class="card-body">
+                    <h2 class="h3">Programming</h2>
+                    <a class="btn btn-warning px-5" href="#">Explore</a>
+                  </div>
+                </div>      
+             </div> 
+            </div>  
+       
+
+        </div>
+        <div style="gap: 1;" class="row justify-content-between content-cards mx-0 mt-2 px0 ">
+   
+            <div class="col-12 col-sm-6  col-lg-6 p-2">
+               <div class="card card-aspect-2">
+                <img src="./public/images/IMAGE  CATEGORY ARCHITECTURE.jpg" style="width: 100%;" alt="">
+                <div class="card-body">
+                  <h2 class="h3">Architecture</h2>
+                  <a class="btn btn-warning px-5" href="#">Explore</a>
+                </div>
+               </div>
+            </div>  
+
+            <div class="col-lg-5 col-12  col-sm-6 p-2">
+              <div class="card card-aspect">
+                <img src="./public/images/IMAGE  CATEGORY BIOLOGY.jpg" style="width: 100%;" alt="">
+                <div class="card-body">
+                  <h2 class="h3">Biology</h2>
+                  <a class="btn btn-warning px-5" href="#">Explore</a>
+                </div>
+              </div>
+            </div>  
+  
+
+        </div>
+        
+      </div>
+
+
+
+      <div style="display: flex; justify-content: center" class="mt-5">
+        <button class="btn btn-outline-warning px-5 mt-4">View More</button>
+      </div>
+     </section>
+      <section class="team py-5">
+      <div class="container-xl">
+        <h2 class="text-center text-md-left h3">Our Team</h2>
+        <hr class="mx-auto mx-md-0" />
+        <h2 class="text-center text-md-left h2">Meet the best professinals</h2>
+        <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card-carousel-item card">
+                <div class="content-image-background-team">
+                  <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+                </div>
+                <div class="content-image-team">
+                  <img class="image-team" src="./public/images/IMAGE TEAM 1.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h5>Jhon Smith</h5>
+                  <h5>Math Teacher</h5>
+                  <div class="row px-0 mx-0 justify-content-center">
+                    <button class="btn btn-outline-warning mt-2">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                   <div class="card-carousel-item card">
+                <div class="content-image-background-team">
+                  <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+                </div>
+                <div class="content-image-team">
+                  <img class="image-team" src="./public/images/IMAGE TEAM 2.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h5>Dave Morgan</h5>
+                  <h5>Math Teacher</h5>
+                  <div class="row px-0 mx-0 justify-content-center">
+                    <button class="btn btn-outline-warning mt-2">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                   <div class="card-carousel-item card">
+                <div class="content-image-background-team">
+                  <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+                </div>
+                <div class="content-image-team">
+                  <img class="image-team" src="./public/images/IMAGE TEAM 4.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h5>Zara Smith</h5>
+                  <h5>Biology Teacher</h5>
+                  <div class="row px-0 mx-0 justify-content-center">
+                    <button class="btn btn-outline-warning mt-2">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-carousel-item card">
+           <div class="content-image-background-team">
+             <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+           </div>
+           <div class="content-image-team">
+             <img class="image-team" src="./public/images/IMAGE TEAM 3.jpg" alt="">
+           </div>
+           <div class="card-body">
+             <h5>Jimena Soto</h5>
+             <h5>Math Teacher</h5>
+             <div class="row px-0 mx-0 justify-content-center">
+               <button class="btn btn-outline-warning mt-2">Read More</button>
+             </div>
+           </div>
+         </div>
+       </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+        <div class="content-cards-team row justify-content-center row-cols-xl-4 mt-5">
+          <div class="">
+            <div class="card-carousel-item card">
+              <div class="content-image-background-team">
+                <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+              </div>
+              <div class="content-image-team">
+                <img class="image-team" src="./public/images/IMAGE TEAM 1.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <h5>Jhon Smith</h5>
+                <h5>Math Teacher</h5>
+                <div class="row px-0 mx-0 justify-content-center">
+                  <button class="btn btn-outline-warning mt-2">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+                 <div class="card-carousel-item card">
+              <div class="content-image-background-team">
+                <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+              </div>
+              <div class="content-image-team">
+                <img class="image-team" src="./public/images/IMAGE TEAM 2.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <h5>Dave Morgan</h5>
+                <h5>Math Teacher</h5>
+                <div class="row px-0 mx-0 justify-content-center">
+                  <button class="btn btn-outline-warning mt-2">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+                 <div class="card-carousel-item card">
+              <div class="content-image-background-team">
+                <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+              </div>
+              <div class="content-image-team">
+                <img class="image-team" src="./public/images/IMAGE TEAM 4.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <h5>Zara Smith</h5>
+                <h5>Biology Teacher</h5>
+                <div class="row px-0 mx-0 justify-content-center">
+                  <button class="btn btn-outline-warning mt-2">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card-carousel-item card">
+         <div class="content-image-background-team">
+           <img class="image-background-team" src="./public/images/IMAGE BACKGROUND CARD TEAM  (1).jpg" alt="">
+         </div>
+         <div class="content-image-team">
+           <img class="image-team" src="./public/images/IMAGE TEAM 3.jpg" alt="">
+         </div>
+         <div class="card-body">
+           <h5>Jimena Soto</h5>
+           <h5>Math Teacher</h5>
+           <div class="row px-0 mx-0 justify-content-center">
+             <button class="btn btn-outline-warning mt-2">Read More</button>
+           </div>
+         </div>
+       </div>
+     </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center" class="mt-5">
+        <button class="btn btn-warning px-5 mt-4">View More</button>
+      </div>
+     </section>
+    <section class="reviews my-5" style="display: flex; justify-content: center;">
+      <div class="content-video">
+        <video id="video-review" src="./public/videos/review-1.mp4" class="container-xl p-0 mx-auto"></video>
+        <div class="content-video-button">
+         <i onclick="playVideo()" class="bi bi-play-circle-fill display-3"></i>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="pt-4 pt-md-5 pb-2">
+      <div class="container-xl">
+        <div class="row mx-0 ">
+          <div class="col-12 col-md row align-items-md-start justify-content-center justify-content-md">
+            <img
+              src="./public/images/LOGO.png"
+              style="width: 120px"
+              class="mt-3 mb-5 mt-md-5"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-md">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled text-small mt-4">
+              <li>
+                <a  href="/#about" onclick="moveScrollToSection(event,1)">About Us</a>
+              </li>
+              <li>
+                <a   href="/#courses" onclick="moveScrollToSection(event,2)">Courses</a>
+              </li>
+              <li>
+                <a   href="/#team" onclick="moveScrollToSection(event,3)">Team</a>
+              </li>
+              <li>
+                <a   href="/#contact" onclick="moveScrollToSection(event,4)"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled text-small mt-4">
+              <li>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=+58123456789&text=Hola">
+                  <i class="bi bi-telephone-fill"></i>123 456 789</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@email.com?subject=Frontend&body=Hola">
+                  <i class="bi bi-envelope-fill"></i>info@email.com</a
+                >
+              </li>
+              <li>
+                <a  href="#"
+                  ><i class="bi bi-geo-alt"></i>address, United Estates</a
+                >
+              </li>
+              <li class="content-networks ml-2 ml-md-5">
+                <a target="_blank" href="https://facebook.com">
+                  <i class="bi-facebook"></i>
+                </a>
+                <a target="_blank" href="https://instagram.com">
+                  <i class="bi-instagram"></i>
+                </a>
+                <a target="_blank" href="https://youtube.com">
+                  <i class="bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 mx-auto col-md row justify-content-center justify-content-md">
+            <h5>NewsLetter</h5>
+            <p>receive all our promotions and notifications</p>
+            <div class="input-send">
+              <input type="text">
+              <button class="btn btn-warning px-3 pl-4">Submit</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row mx-0 align-items-center">
+          <p class="col mb-0 pb-0">
+            © Copyright University. All Rights Reserved
+            <br />
+            This Website Was Designed And Developed by Josesilvera.com
+          </p>
+          <a target="_blank" href="https://josesilvera.com">
+            <img
+              style="width: 100px"
+              src="./public/images/logo Silvera Enterprises.png"
+              alt="Josesilvera"
+            />
+          </a>
+        </div>
+      </div class="container-md">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="./js/getPosition.js" ></script>
+    <script src="./js/playVideoReview.js" ></script>
+    <script src="./js/changeHeader.js" ></script>
+    
+  </body>
+</html>

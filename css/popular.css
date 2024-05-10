@@ -1,0 +1,72 @@
+.popular {
+  background: #fff;
+  padding: 2em 0;
+  & .card {
+    border: 0;
+    padding: 0;
+    box-shadow: 10px 10px 10px 1px #00000049;
+    border-radius: 10px;
+    overflow: hidden;
+    & .card-body {
+      border-top: 6px solid #ffa100;
+      padding-top: 0.8em;
+      display: grid;
+  
+      & h5 {
+        text-align: center;
+        color: #003a70;
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 1em;
+      }
+      & a {
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-inline: auto;
+        margin-top: 1em;
+        @media (width <= 400px) {
+          font-size: 13px;
+        }
+      }
+    }
+    & .card-media {
+      width: 100%;
+      aspect-ratio: 1.2;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 6px solid #003a70;
+    }
+  }
+}
+.popular h2 {
+  color: #003a70;
+}
+.popular h2:nth-child(1) {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+.popular h2:nth-child(3) {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0.2em;
+}
+& .popular-content-cards {
+  padding-top: 3em;
+  gap: 2em 0;
+  margin: 0;
+}
+
+
+.popular hr {
+  margin: 0.3em 0;
+  width: 290px;
+  border-bottom: 3px solid #ffa100;
+}
+.popular button {
+  border-radius: 20px;
+  font-weight: 600;
+  &:hover {
+    color: #fff;
+  }
+}

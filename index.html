@@ -131,7 +131,9 @@
       </div>
 
       <div class="hero-video">
-        <video src="./public/videos/hero-video.mp4" autoplay loop></video>
+        <video autoplay loop>
+          <source src="./public/videos/hero-video.mp4" type="video/mp4" >
+        </video>
       </div>
     </section>
     <section class="popular container-xl">
@@ -572,8 +574,8 @@
 
     <footer class="pt-4 pt-md-5 pb-2">
       <div class="container-xl">
-        <div class="row mx-0 ">
-          <div class="col-12 col-md row align-items-md-start justify-content-center justify-content-md">
+        <div class="row ">
+          <div class="col-12 col-md d-flex align-items-md-start justify-content-center">
             <img
               src="./public/images/LOGO.png"
               style="width: 120px"
@@ -641,13 +643,13 @@
           </div>
         </div>
         <hr />
-        <div class="row row-cols-1 mx-0 align-items-center">
-          <p class="col mb-0 pb-0">
+        <div class="row row-cols-1 row-cols-sm-2 mx-0 gap-1  align-items-center">
+          <p class="col mb-0 pb-0 text-center text-sm-left">
             © Copyright University. All Rights Reserved
             <br />
             This Website Was Designed And Developed by Josesilvera.com
           </p>
-          <a target="_blank" href="https://josesilvera.com">
+          <a target="_blank" class="text-center text-sm-right my-4 my-sm-0 href="https://josesilvera.com">
             <img
               style="width: 100px"
               src="./public/images/logo Silvera Enterprises.png"

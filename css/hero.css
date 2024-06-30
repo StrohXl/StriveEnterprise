@@ -10,6 +10,7 @@
   }
   @media (width >= 1200px) {
     padding: 12em 0 8em !important;
+    height: 100vh;
   }
 }
 .hero-body {
@@ -87,23 +88,19 @@
   }
   @media (width>=768px) {
     left: 0%;
-    video {
-      width: 160%;
+    & video {
+      width: 200%;
     }
   }
   @media (width>=1200px) {
-    video {
+    & video {
       width: 120%;
     }
   }
   @media (width>=1300px) {
-    video {
+    & video {
       width: 110%;
     }
   }
-  @media (width>=1400px) {
-    video {
-      width: 100%;
-    }
-  }
+
 }

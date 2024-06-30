@@ -72,21 +72,30 @@
       color: #ffa100;
     }
   }
-  & .carousel-desktop{
+  & .carousel-desktop {
     display: none;
+  }
+  .carousel-indicators{
+    bottom: -50px;
   }
   @media (width>768px) {
     .carousel-movil {
       display: none;
     }
- 
-    .carousel-desktop{
+
+    .carousel-desktop {
       display: flex;
     }
-    .carousel-control-prev{
+
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+      display: flex;
+    }
+   
+
+    .carousel-control-prev  {
       left: -125px;
     }
-    .carousel-control-next{
+    .carousel-control-next {
       right: -125px;
     }
   }

@@ -22,7 +22,7 @@
     color: #fff;
     border-radius: 20px;
   }
-   .card-carousel-item {
+  .card-carousel-item {
     margin: auto;
     width: 250px;
     display: grid;
@@ -72,15 +72,22 @@
       color: #ffa100;
     }
   }
-  & .content-cards-team {
+  & .carousel-desktop{
     display: none;
   }
   @media (width>768px) {
-    .carousel {
+    .carousel-movil {
       display: none;
     }
-    .content-cards-team {
+ 
+    .carousel-desktop{
       display: flex;
+    }
+    .carousel-control-prev{
+      left: -125px;
+    }
+    .carousel-control-next{
+      right: -125px;
     }
   }
 }

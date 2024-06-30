@@ -21,6 +21,14 @@ footer {
   & ul {
     display: grid;
     gap: 0.5em;
+    @media (width < 576px) {
+      justify-content: center;
+      & li{
+        display: grid;
+        justify-content: center;
+      }
+    }
+  
 
     & .content-networks {
       display: flex;
@@ -41,6 +49,7 @@ footer {
     padding: 3px;
     height: 40px;
     border-radius: 20px;
+    max-width: 300px;
     overflow: hidden;
     & input {
       border: none;

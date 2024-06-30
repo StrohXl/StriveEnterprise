@@ -135,13 +135,14 @@
       </div>
     </section>
     <section class="popular container-xl">
+
       <h2 class="px-3 px-xl-0">The most popular</h2>
       <hr class="mx-3 mx-xl-0" />
       <h2 class="px-3 px-xl-0">know what we offer you</h2>
       <div
-        class="popular-content-cards row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+        class="popular-content-cards row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
       >
-        <div class="col">
+        <div class="col d-flex justify-content-center">
           <div class="card" style="width: 100%; max-width: 16rem">
             <div class="card-media">
               <img
@@ -160,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="coln d-flex justify-content-center">
           <div class="card" style="width: 100%; max-width: 16rem">
             <div class="card-media">
               <img
@@ -179,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="coln d-flex justify-content-center">
           <div class="card" style="width: 100%; max-width: 16rem">
             <div class="card-media">
               <img
@@ -198,7 +199,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="coln d-flex justify-content-center">
           <div class="card" style="width: 100%; max-width: 16rem">
             <div class="card-media">
               <img
@@ -580,11 +581,11 @@
               alt=""
             />
           </div>
-          <div class="col-6 col-md">
-            <h5>Quick Links</h5>
+          <div class="col-12 col-md">
+            <h5 class="text-center text-sm-left">Quick Links</h5>
             <ul class="list-unstyled text-small mt-4">
               <li>
-                <a  href="/#about" onclick="moveScrollToSection(event,1)">About Us</a>
+                <a   href="/#about" onclick="moveScrollToSection(event,1)">About Us</a>
               </li>
               <li>
                 <a   href="/#courses" onclick="moveScrollToSection(event,2)">Courses</a>
@@ -599,8 +600,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md">
-            <h5>Contact Info</h5>
+          <div class="col-12 col-md">
+            <h5 class="text-center text-sm-left">Contact Info</h5>
             <ul class="list-unstyled text-small mt-4">
               <li>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=+58123456789&text=Hola">
@@ -630,17 +631,17 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 mx-auto col-md row justify-content-center justify-content-md">
-            <h5>NewsLetter</h5>
-            <p>receive all our promotions and notifications</p>
-            <div class="input-send">
+          <div class="col-12 mx-auto col-md row row-cols-1 justify-content-center justify-content-md">
+            <h5 class="text-center text-sm-left">NewsLetter</h5>
+            <p class="text-center text-sm-left">receive all our promotions and notifications</p>
+            <div class="input-send ">
               <input type="text">
               <button class="btn btn-warning px-3 pl-4">Submit</button>
             </div>
           </div>
         </div>
         <hr />
-        <div class="row mx-0 align-items-center">
+        <div class="row row-cols-1 mx-0 align-items-center">
           <p class="col mb-0 pb-0">
             © Copyright University. All Rights Reserved
             <br />

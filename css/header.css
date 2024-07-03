@@ -28,7 +28,8 @@ header nav .nav-secondary .container-fluid {
 header nav .nav-primary {
   width: 100%;
   background-color: transparent;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +49,9 @@ header nav .nav-primary nav ul {
   gap: 1em;
   padding: 0;
   font-size: 14px;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
   @media (width>=800px) {
     gap: 3em;
     font-size: 16px;
@@ -67,11 +71,11 @@ header nav .nav-primary nav ul li {
 }
 header nav .nav-primary img {
   width: 60px;
+  margin-left: 30px;
   @media (width >= 800px) {
     width: 100px;
   }
 }
-
 
 header .content-networks {
   display: flex;

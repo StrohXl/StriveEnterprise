@@ -54,17 +54,27 @@
         </div>
         <div class="nav-primary ">
         
-        <nav class="navbar navbar-expand-sm container-xl px-3 px-xxl-0">
+        <nav class="navbar navbar-expand-sm container-xl  px-xxl-0">
           <img  src="./public/images/LOGO.png" alt="" />
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler mr-3" onclick="openMenu()" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                </path>
+              </svg>
 
             </span>
           </button>
         
           <div class="collapse mt-4 mt-sm-0 navbar-collapse justify-content-end" id="navbarsExample03">
-            <ul class="mb-0">
+            <ul class="mb-0 row row-cols-1 d-sm-none">
+              <li   data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" class="text-center h3 "><a href="/#about" onclick="moveScrollToSection(event,1), openMenu()">About Us</a></li>
+              <li  data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" class="text-center h3 "><a href="/#courses" onclick="moveScrollToSection(event,2), openMenu()">Courses</a></li>
+              <li  data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" class="text-center h3 "><a href="/#team" onclick="moveScrollToSection(event,3), openMenu()" >Team</a></li>
+              <li   data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" class="text-center h3 "><a href="/#contact"onclick="moveScrollToSection(event,4), openMenu()">Contact Us</a></li>
+            </ul>
+            <ul class="mb-0 d-none d-sm-flex mr-5">
               <li><a href="/#about" onclick="moveScrollToSection(event,1)">About Us</a></li>
               <li><a href="/#courses" onclick="moveScrollToSection(event,2)">Courses</a></li>
               <li><a href="/#team" onclick="moveScrollToSection(event,3)" >Team</a></li>
@@ -728,17 +738,19 @@
       </div>
      </section>
     <section class="reviews my-5" style="display: flex; justify-content: center;">
-    <div class="container-xl">
+    <div class="container-xl px-0 mx-3">
         <div id="carouselExampleVideos" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleVideos" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleVideos" data-slide-to="1"></li>
             <li data-target="#carouselExampleVideos" data-slide-to="2"></li>
+            <li data-target="#carouselExampleVideos" data-slide-to="3"></li>
+            <li data-target="#carouselExampleVideos" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner">
             <div class="px-2 carousel-item active">
               <div class="content-video ">
-                <video id="video-review" src="./public/videos/review-1.mp4" class="container-xl p-0 mx-auto"></video>
+                <video id="video-review" src="./public/videos/review-1.mp4" class=" p-0 mx-auto"></video>
                 <div class="content-video-button">
                  <i onclick="playVideo()" class="bi bi-play-circle-fill display-3"></i>
                 </div>
@@ -746,29 +758,38 @@
             </div>
             <div class="px-2 carousel-item">
               <div class="content-video ">
-                <video id="video-review2" src="./public/videos/review-1.mp4" class="container-xl p-0 mx-auto"></video>
+                <video id="video-review2" src="./public/videos/review-1.mp4" class=" p-0 mx-auto"></video>
                 <div class="content-video-button2">
                  <i onclick="playVideo2()" class="bi bi-play-circle-fill display-3"></i>
                 </div>
               </div>
             </div>
-          <div class="px-2 carousel-item">
+            <div class="px-2 carousel-item">
               <div class="content-video ">
-                <video id="video-review3" src="./public/videos/review-1.mp4" class="container-xl p-0 mx-auto"></video>
+                <video id="video-review3" src="./public/videos/review-1.mp4" class=" p-0 mx-auto"></video>
                 <div class="content-video-button3">
                  <i onclick="playVideo3()" class="bi bi-play-circle-fill display-3"></i>
                 </div>
               </div>
+            </div>
+            <div class="px-2 carousel-item">
+              <div class="content-video ">
+                <video id="video-review4" src="./public/videos/review-1.mp4" class=" p-0 mx-auto"></video>
+                <div class="content-video-button4">
+                 <i onclick="playVideo4()" class="bi bi-play-circle-fill display-3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 carousel-item">
+              <div class="content-video ">
+                <video id="video-review5" src="./public/videos/review-1.mp4" class=" p-0 mx-auto"></video>
+                <div class="content-video-button5">
+                 <i onclick="playVideo5()" class="bi bi-play-circle-fill display-3"></i>
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-target="#carouselExampleVideos" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-target="#carouselExampleVideos" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
+     
         </div>
     </div>
       
